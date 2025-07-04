@@ -20,7 +20,14 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
-
+  <style>
+    @media (max-width: 767.98px) {
+      .director-img {
+        width: 150px !important;
+        height: 150px !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -248,10 +255,11 @@
 
       <!-- Pastora -->
       <div class="col-12 col-md-6 px-4">
-        <div class="d-flex align-items-center mb-4">
-          <img src="./img/profe1.png" alt="Pastora" class="rounded-circle"
+        <div
+          class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start mb-4">
+          <img src="./img/profe1.png" alt="Pastora" class="rounded-circle mb-3 mb-md-0"
             style="width: 150px; height: 150px; object-fit: cover;">
-          <div class="ms-3">
+          <div class="ms-md-3 text-center text-md-start">
             <h5 class="mb-1 text-white">DIRECTOR ACADEMICO</h5>
             <p class="mb-0 text-white">Responsable de acompañar espiritualmente a los estudiantes durante su formación
               ministerial.</p>
@@ -261,10 +269,11 @@
 
       <!-- Director -->
       <div class="col-12 col-md-6 px-4">
-        <div class="d-flex align-items-center mb-4">
-          <img src="./img/pastora.jpg" alt="Director" class="rounded-circle"
-            style="width: 200px; height: 150px; object-fit: cover;">
-          <div class="ms-3">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start mb-4">
+          <img src="./img/pastora.jpg" alt="Director" class="rounded-circle mb-3 mb-md-0 director-img"
+            style="width: 250px; height: 150px; object-fit: cover;">
+          <div class="ms-md-3 text-center text-md-start">
             <h5 class="mb-1 text-white">DIRECTORA GENERAL</h5>
             <p class="mb-0 text-white">Guía espiritual y director del instituto, con años de experiencia en liderazgo
               comunitario.</p>
@@ -274,6 +283,7 @@
 
     </div>
   </section>
+
 
 
 
@@ -579,27 +589,27 @@
 
 
 
-<!-- efecto -->
- <script>
-  // Al cargar la página, hacer fade in
-  document.addEventListener('DOMContentLoaded', () => {
-    document.body.style.opacity = '1';
-  });
-
-  // Agregar eventos a todos los enlaces para animar el fade out
-  document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault(); // prevenir navegación inmediata
-      const href = link.getAttribute('href');
-
-      document.body.classList.add('fade-out');
-
-      setTimeout(() => {
-        window.location = href;
-      }, 500); // duración de la animación igual que en CSS
+  <!-- efecto -->
+  <script>
+    // Al cargar la página, hacer fade in
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.style.opacity = '1';
     });
-  });
-</script>
+
+    // Agregar eventos a todos los enlaces para animar el fade out
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault(); // prevenir navegación inmediata
+        const href = link.getAttribute('href');
+
+        document.body.classList.add('fade-out');
+
+        setTimeout(() => {
+          window.location = href;
+        }, 500); // duración de la animación igual que en CSS
+      });
+    });
+  </script>
 
 
 

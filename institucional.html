@@ -344,10 +344,6 @@
   </footer>
 
 
-
-
-
-
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const toggler = document.querySelector(".navbar-toggler");
@@ -395,7 +391,27 @@
   </script>
 
 
+<!-- efecto -->
+ <script>
+  // Al cargar la página, hacer fade in
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.style.opacity = '1';
+  });
 
+  // Agregar eventos a todos los enlaces para animar el fade out
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault(); // prevenir navegación inmediata
+      const href = link.getAttribute('href');
+
+      document.body.classList.add('fade-out');
+
+      setTimeout(() => {
+        window.location = href;
+      }, 500); // duración de la animación igual que en CSS
+    });
+  });
+</script>
 
 
 

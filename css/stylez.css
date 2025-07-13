@@ -11,7 +11,7 @@
       background-repeat: no-repeat;
   }
 
-    .hero-wrapper2 {
+  .hero-wrapper2 {
       position: relative;
       color: white;
       padding-top: 20px;
@@ -71,6 +71,37 @@
       top: -150px;
       transition: .5s;
   }
+
+
+  /*menu transparencia list*/
+ 
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.1) !important; /* blanco con transparencia */
+  border: none;
+  box-shadow: none;
+  backdrop-filter: blur(5px); /* efecto de vidrio esmerilado */
+}
+
+/* Texto blanco */
+.dropdown-item {
+  color: #ffffff !important;  /* fuerza a usar blanco */
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Hover con fondo más blanco translúcido */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: rgba(0, 0, 0, 0.3) !important; /* negro translúcido */
+  color: #ffffff !important;
+}
+
+
+
+
+
+
 
   /* ==== ESTILOS PARA MÓVIL - MENU OVERLAY Y TOGGLE FIJO ==== */
   @media (max-width: 991.98px) {
@@ -250,225 +281,239 @@
 
 
 
-/* Para que el padding no agregue ancho extra */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+  /* Para que el padding no agregue ancho extra */
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
 
-/* ******** */
-/* TESTIMONIOS */
-/* ******** */
-.testimonios{
-    position: relative;
-    background-image: url("./../img/cuadroluz.png");
-    background-size: cover;
-    height: 100vh;
-    z-index: 100;
-    overflow-x: hidden; /* Evitar scroll horizontal */
-}
-.testimonios .division{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    top: 0;
-    left: 0;
-}
-.testimonios .division .col{
-    width: 50%;
-}
-.testimonios .division .col2{
-    background: rgba(0,0,0,.5);
-}
-.testimonios .fila{
-    display: flex;
-    max-width: 1200px;
-    margin: auto;
-}
-.testimonios .fila .titulo{
-    width: 40%;
-    font-size: 80px;
-    color: #fff;
-}
-.testimonios .fila .cliente{
-    width: 20%;  
-}
+  /* ******** */
+  /* TESTIMONIOS */
+  /* ******** */
+  .testimonios {
+      position: relative;
+      background-image: url("./../img/cuadroluz.png");
+      background-size: cover;
+      height: 100vh;
+      z-index: 100;
+      overflow-x: hidden;
+      /* Evitar scroll horizontal */
+  }
 
-.testimonios .fila .cliente .contenedor-img{
-    position: relative;
-    width: 90%;
-    margin: auto;
-}
-.testimonios .fila .cliente .contenedor-img img{
-    width: 100%;
-    border-radius: 50%;
-}
-.testimonios .fila .cliente .siguiente{
-    width: 50px;
-    height: 50px;
-    display: block;
-    border-radius: 50%;
-    border: none;
-    margin: auto;
-    position: relative;
-    font-size: 30px;
-    background-color: #ff3366;
-    color: #fff;
-    cursor: pointer;
-    transition: .3s;
-}
-.testimonios .fila .cliente .siguiente:hover{
-    background-color: #333;
-    color: #ff3366;
-}
-.testimonios .fila .opinion{
-    position: relative;
-    width: 40%;
-    color: #fff;
-    padding-left: 40px;
-}
-.testimonios .fila .opinion h3{
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-.testimonios .fila .opinion p{
-    font-size: 16px;
-    margin-bottom: 15px;
-    line-height: 35px;
-    color: #888888;
-}
+  .testimonios .division {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      top: 0;
+      left: 0;
+  }
 
-.titulo-seccion{
-    font-size: 12rem;
-    width: fit-content;
-    letter-spacing: 8px;
-    color: transparent;
-    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
-    position: relative;
-    transform: translateX(100px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
+  .testimonios .division .col {
+      width: 50%;
+  }
 
-#txtCliente {
-  margin-top: 0;
-  padding-top: 0;
-  line-height: 1.3;
-  max-height: none;
-}
+  .testimonios .division .col2 {
+      background: rgba(0, 0, 0, .5);
+  }
 
-.fila {
-  padding-bottom: 10px; /* reducir padding inferior */
-}
+  .testimonios .fila {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+  }
 
-.testimonios {
-  padding-top: 20px; /* ajustar para que no se vea tan grande */
-  padding-bottom: 20px;
-}
+  .testimonios .fila .titulo {
+      width: 40%;
+      font-size: 80px;
+      color: #fff;
+  }
 
+  .testimonios .fila .cliente {
+      width: 20%;
+  }
 
+  .testimonios .fila .cliente .contenedor-img {
+      position: relative;
+      width: 90%;
+      margin: auto;
+  }
 
-/* ******** */
-/* RESPONSIVE*/
-/* ******** */
+  .testimonios .fila .cliente .contenedor-img img {
+      width: 100%;
+      border-radius: 50%;
+  }
 
-@media screen and (max-width:1200px){
-    .titulo-seccion{
-        font-size: 8rem;
-    }
-}
+  .testimonios .fila .cliente .siguiente {
+      width: 50px;
+      height: 50px;
+      display: block;
+      border-radius: 50%;
+      border: none;
+      margin: auto;
+      position: relative;
+      font-size: 30px;
+      background-color: #ff3366;
+      color: #fff;
+      cursor: pointer;
+      transition: .3s;
+  }
 
-@media screen and (max-width:900px){
-    .titulo-seccion{
-        font-size: 4rem;
-    }
+  .testimonios .fila .cliente .siguiente:hover {
+      background-color: #333;
+      color: #ff3366;
+  }
 
-    .testimonios .fila{
-        display: block;
-        max-width: 100%;
-        padding: 0 10px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
+  .testimonios .fila .opinion {
+      position: relative;
+      width: 40%;
+      color: #fff;
+      padding-left: 40px;
+  }
 
-    .testimonios .fila .titulo{
-        position: relative;
-        width: 100%;
-        font-size: 40px;
-        text-align: center;
-    }
-    .testimonios .fila .cliente{
-        width: 60%;
-        margin: 20px auto;  
-    }
-    .testimonios .fila .opinion{
-        width: 100%;
-        color: #fff;
-        text-align: center;
-        padding: 0 10px;
-        box-sizing: border-box;
-    }
-}
+  .testimonios .fila .opinion h3 {
+      font-size: 30px;
+      margin-bottom: 15px;
+  }
+
+  .testimonios .fila .opinion p {
+      font-size: 16px;
+      margin-bottom: 15px;
+      line-height: 35px;
+      color: #888888;
+  }
+
+  .titulo-seccion {
+      font-size: 12rem;
+      width: fit-content;
+      letter-spacing: 8px;
+      color: transparent;
+      -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+      position: relative;
+      transform: translateX(100px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  #txtCliente {
+      margin-top: 0;
+      padding-top: 0;
+      line-height: 1.3;
+      max-height: none;
+  }
+
+  .fila {
+      padding-bottom: 10px;
+      /* reducir padding inferior */
+  }
+
+  .testimonios {
+      padding-top: 20px;
+      /* ajustar para que no se vea tan grande */
+      padding-bottom: 20px;
+  }
 
 
 
-/*CARRERAS*/
-.service {
-  text-align: center;
-}
+  /* ******** */
+  /* RESPONSIVE*/
+  /* ******** */
 
-.service-card {
-  background-color: #b9b997;
-  border-radius: 30px;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
+  @media screen and (max-width:1200px) {
+      .titulo-seccion {
+          font-size: 8rem;
+      }
+  }
 
-.service-card:hover {
-  background-color: #c5c07c;
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  cursor: pointer;
-}
+  @media screen and (max-width:900px) {
+      .titulo-seccion {
+          font-size: 4rem;
+      }
 
+      .testimonios .fila {
+          display: block;
+          max-width: 100%;
+          padding: 0 10px;
+          margin: 0 auto;
+          box-sizing: border-box;
+      }
 
-.btn-text {
-  cursor: pointer;
-}
+      .testimonios .fila .titulo {
+          position: relative;
+          width: 100%;
+          font-size: 40px;
+          text-align: center;
+      }
 
-/*FOOTER*/
-.social-icon {
-  width: 60px;
-  height: 60px;
-  background-color: #ffffff1a;
-  border-radius: 50%;
-  color: white;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  font-size: 18px;
-}
+      .testimonios .fila .cliente {
+          width: 60%;
+          margin: 20px auto;
+      }
 
-.social-icon:hover {
-  background-color: #ffffff33;
-  transform: scale(1.1);
-  text-decoration: none;
-}
-/*PROFESORES*/
-
-
-/*efectos de pagina*/
-body {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-body.fade-in {
-  opacity: 1;
-}
-body.fade-out {
-  opacity: 0;
-}
+      .testimonios .fila .opinion {
+          width: 100%;
+          color: #fff;
+          text-align: center;
+          padding: 0 10px;
+          box-sizing: border-box;
+      }
+  }
 
 
 
+  /*CARRERAS*/
+  .service {
+      text-align: center;
+  }
+
+  .service-card {
+      background-color: #b9b997;
+      border-radius: 30px;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-card:hover {
+      background-color: #c5c07c;
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+  }
 
 
+  .btn-text {
+      cursor: pointer;
+  }
 
+  /*FOOTER*/
+  .social-icon {
+      width: 60px;
+      height: 60px;
+      background-color: #ffffff1a;
+      border-radius: 50%;
+      color: white;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-size: 18px;
+  }
+
+  .social-icon:hover {
+      background-color: #ffffff33;
+      transform: scale(1.1);
+      text-decoration: none;
+  }
+
+  /*PROFESORES*/
+
+
+  /*efectos de pagina*/
+  body {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+  }
+
+  body.fade-in {
+      opacity: 1;
+  }
+
+  body.fade-out {
+      opacity: 0;
+  }

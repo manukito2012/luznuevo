@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
@@ -20,29 +18,17 @@
     <link rel="stylesheet" href="css/stylez.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <style>
-        /* Estilo para que la imagen sea más grande en pantallas grandes */
-        img.responsive-img {
-            max-width: 400px;
-            /* tamaño para móviles */
-            width: 75%;
-            height: auto;
-        }
 
-        @media (min-width: 992px) {
-            img.responsive-img {
-                max-width: 700px !important;
-                /* tamaño para escritorio */
-            }
-        }
-    </style>
+
+
 </head>
+
 
 <body>
 
 
-
     <div class="hero-wrapper">
+        <!-- Responsive navbar-->
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg  navbar-dark  py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <!-- Logo grande posicionado de forma absoluta -->
@@ -67,31 +53,18 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link">INICIO</a>
-                   <!--  <a href="institucional.html" class="nav-item nav-link">INSTITUCIONAL</a> -->
+                    <!-- <a href="institucional.html" class="nav-item nav-link">INSTITUCIONAL</a> -->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">MODALIDAD</a>
                         <div class="dropdown-menu m-0">
                             <a href="estudios.html" class="dropdown-item">PRESENCIAL</a>
-                            <a href="estudios.html" class="dropdown-item">ONLINE</a>
+                            <a href="online.html" class="dropdown-item">ONLINE</a>
                         </div>
                     </div>
-
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ONLINE</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="index.html" class="dropdown-item">Diplom. en Teologia Basica</a>
-                            <a href="#" class="dropdown-item">Bachiller en Teologia</a>
-                            <a href="#" class="dropdown-item">Lic. en Teologia</a>
-
-                        </div>
-                    </div> -->
-
-
                     <a href="planestudios.html" class="nav-item nav-link " data-bs-toggle="dropdown">PLAN DE
                         ESTUDIOS</a>
-
                 </div>
-                <a href="https://luzalasnaciones.com.ar/moode/login/index.php"
+               <a href="https://luzalasnaciones.com.ar/moode/login/index.php"
           class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Campus<i
             class="fa fa-arrow-right ms-3"></i></a>
             </div>
@@ -102,16 +75,17 @@
         <!-- Header-->
         <header class="bg-dark bg-transparent py-5">
             <div class="container px-5">
-                <div class="row gx-5 justify-content-start">
-                    <!-- Cambié justify-content-center por justify-content-start -->
+                <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
-                        <div class="text-start my-5"> <!-- Cambié text-center por text-start -->
-                            <h1 class="display-5 fw-bolder text-white mb-2">Programa de Capacitación Ministerial
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">MODALIDAD ONLINE
                             </h1>
-                            <p class="lead text-white mb-5">Capacítate para el servicio con un programa diseñado para
-                                desarrollar líderes comprometidos con la Palabra y el ministerio práctico en la iglesia.
-                            </p>
-
+                            <p class="lead text-white fw-bold mb-4">Estudiá desde cualquier lugar, con acompañamiento
+                                académico, formación integral y un propósito guiado por la fe.</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Ver Requisitos</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Inscribete aqui</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,49 +93,50 @@
         </header>
 
 
+
+
+
+
     </div>
 
-    <!-- PLANES -->
-    <section class="py-5" style="background: linear-gradient(135deg, #004aad, #0c1f53);">
-        <div class="container">
-            <!-- Diplomatura en Teología Básica -->
-            <div class="text-center mb-5">
-                <h2 class="fw-bold mb-2" style="color: #cbd5e1;">Diplomatura en Teología Básica</h2>
-                <p class="mb-4" style="color: #cbd5e1;">Primer y Segundo Año · Duración total: 2 años</p>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-6 mb-3">
-                        <img src="./img/curso1.jpg" alt="Plan de estudios Año 1" class="img-fluid shadow rounded">
-                    </div>
-                    <div class="col-12 col-md-6 mb-3">
-                        <img src="./img/curso2.jpg" alt="Plan de estudios Año 2" class="img-fluid shadow rounded">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bachiller en Teología -->
-            <div class="text-center mb-5">
-                <h2 class="fw-bold mb-2" style="color: #cbd5e1;">Bachiller en Teología</h2>
-                <p class="mb-4" style="color: #cbd5e1;">Tercer Año · Duración total: 3 años</p>
-                <div>
-                    <img src="./img/curso3.jpg" alt="Plan de estudios Año 3" class="img-fluid shadow rounded w-100"
-                        style="max-width: 800px;">
-                </div>
-            </div>
-
-            <!-- Licenciatura en Teología -->
-            <div class="text-center mb-5">
-                <h2 class="fw-bold mb-2" style="color: #cbd5e1;">Licenciatura en Teología</h2>
-                <p class="mb-4" style="color: #cbd5e1;">Cuarto Año · Duración total: 4 años</p>
-                <div>
-                    <img src="./img/curso4.jpg" alt="Plan de estudios Año 4" class="img-fluid shadow rounded w-100"
-                        style="max-width: 800px;">
-                </div>
-            </div>
 
 
-        </div>
+
+    <!-- Requisitos -->
+    <section class="py-0">
+        <img src="./img/timoteo.png" class="img-fluid w-100 rounded shadow"
+            style="max-height: 600px; object-fit: cover;">
     </section>
 
+
+
+
+
+
+
+    <!-- Requisitos -->
+    <section class="py-5 " style="background: linear-gradient(135deg, #004aad, #0c1f53);">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Texto requisitos -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <h2 class="fw-bold" style="color:#cfe2ff;">Requisitos para anotarse</h2>
+                    <p style="color: azure;">
+                        Para poder inscribirte en nuestros programas académicos, debes cumplir con algunos requisitos
+                        básicos que garantizan tu formación exitosa.
+                        Revisa la siguiente información para conocerlos y estar listo para comenzar tu camino de
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <!-- Imagen requisitos -->
+                <div class="col-12 col-md-6 text-center">
+                    <img src="./img/requisitos.PNG" alt="Requisitos Académicos"
+                        class="img-fluid shadow rounded responsive-img" />
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- PIE DE PAGINA -->
@@ -190,6 +165,7 @@
                 <a href="#" class="social-icon d-flex align-items-center justify-content-center">
                     <i class="fab fa-instagram"></i>
                 </a>
+
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luznaciones2022@gmail.com&su=Contacto&body=Hola, quiero contactarte"
                     target="_blank" class="social-icon d-flex align-items-center justify-content-center">
                     <i class="fas fa-envelope"></i>
@@ -198,6 +174,9 @@
             </div>
         </div>
     </footer>
+
+
+
 
 
     <script>
@@ -245,8 +224,6 @@
         });
 
     </script>
-
-
     <!-- efecto -->
     <script>
         // Al cargar la página, hacer fade in
@@ -272,6 +249,8 @@
 
 
 
+
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap JS Bundle (incluye Popper) -->
@@ -284,15 +263,6 @@
 
 
 
-    <!-- Bootstrap core JS--> <!-- Bootstrap JS Bundle (incluye Popper) --> <!-- Core theme JS-->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 
 

@@ -30,6 +30,10 @@
           /* o el tamaño que quieras */
       }
   }
+.metodo-img {
+  height: 280px;
+  object-fit: cover;
+}
 
 
   .navbar {
@@ -519,3 +523,5 @@
   body.fade-out {
       opacity: 0;
   }
+
+
